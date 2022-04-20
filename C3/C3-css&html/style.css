@@ -1,0 +1,43 @@
+html, body {
+    margin-left:282px;
+    margin-right:282px;
+}
+html, body {
+    height:100%;
+}
+
+.flex1 {
+    display: flex;
+    -ms-flex-align: start;
+  }
+  .flex2 {
+      flex-direction:row;
+      flex-wrap:wrap;
+  }
+  .l {
+      color:ivory
+  }
+  .h{
+    clip-path: circle();
+    }
+   .s {
+       color:rgb(192, 192, 196)
+   }
+
+  #pond {
+    display: flex;
+    align-items: flex-start;
+  }
+
+.hkl {
+    text-align:center;
+    background-color:rgb(245, 245, 245);
+}
+.fp {
+    width:300px;
+    height:270px;
+}
+.flex3 {
+    display: flex;
+    flex-direction: column;
+}
