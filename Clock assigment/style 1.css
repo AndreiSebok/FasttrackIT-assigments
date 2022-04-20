@@ -1,0 +1,169 @@
+#clockContainer {
+    position: absolute;
+    margin: auto;
+    height: 40vw;
+    width: 40vw;
+    background:  no-repeat;
+    background-size: 100%;
+}
+  
+  
+#hour {
+  position: absolute;
+    width: 1.8%;
+    height: 25%;
+    top: 25%;
+    left: 48.85%;
+    opacity: 0.8;
+    border-radius: 10px;
+    transform-origin: bottom;
+    background-color: black;
+}
+  
+#minute {
+  position:absolute;
+    width: 1.5%;
+    height: 32%;
+    top: 19%;
+    left: 48.9%;
+    opacity: 0.8;
+    border-radius: 10px;
+    transform-origin: bottom;
+    background-color:#333;
+}
+  
+#second {
+  position:absolute;
+    width: 1%;
+    height: 40%;
+    top: 9%;
+    left: 49.25%;
+    opacity: 0.8;
+    border-radius: 10px;
+    transform-origin: bottom;
+    background-color:red;
+}
+
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Open Sans", sans-serif;
+  }
+  
+  
+  .clock-body {
+    height: 40vw;
+    width: 40vw;
+    border-radius: 50%;
+    position: relative;
+    box-shadow: inset 0px 0px 15px #a6a9b4, 0 0 0 7px #333; 
+  }
+  
+  .disc {
+  
+    width: 0.5rem;
+    height: 0.5rem;
+    background: var(--clr-red);
+    border-radius: 50%;
+    z-index: 2;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+  }
+  
+  .disc-bottom {
+    width: 1.5vw;
+    height: 1.5vw;
+    background: #333;
+    z-index: 1;
+    object-position: 0%;
+  }
+
+  span {
+    display: inline-block;
+    position: absolute;
+    color: #333;
+    font-size: 22px;
+    font-family: 'Poiret One';
+    font-weight: 700;
+    z-index: 4;
+  }
+
+  .h12 {
+    top: 13%;
+    left: 50%;
+    margin-left: -9px;
+  }
+  .h3 {
+    top: 48%;
+    right: 32%;
+  }
+  .h6 {
+  bottom: 13%;
+  left: 49.85%;
+  
+  }
+  .h9 {
+    left: 32%;
+    top: 48%;
+  }
+
+.vl1 {
+  border-left: 6px solid black;
+  height: 35px;
+  position: absolute;
+  left: 50%;
+  top: 10%;
+}
+
+.vl2 {
+  border-left: 6px solid black;
+  height: 35px;
+  position: absolute;
+  left: 50%;
+  bottom: 10%;
+}
+
+.hr1 {
+  border-left: 35px solid black;
+  height: 6px;
+  position: absolute;
+  left: 30%;
+  top: 49%;
+}
+
+.hr2 {
+  border-left: 35px solid black;
+  height: 6px;
+  position: absolute;
+  right: 30%;
+  top: 49%;
+}
+
+#clockContainer .number {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transform: rotate(var(--rotation));
+}
+
+#clockContainer .number1 { --rotation: 30deg; }
+ #clockContainer .number2 { --rotation: 60deg; }
+ #clockContainer .number4 { --rotation: 120deg; }
+ #clockContainer .number5 { --rotation: 150deg; }
+ #clockContainer .number7 { --rotation: 210deg; }
+ #clockContainer .number8 { --rotation: 2400deg; }
+ #clockContainer .number10 { --rotation: 300deg; }
+ #clockContainer .number11 { --rotation: 330deg; }
