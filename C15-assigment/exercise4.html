@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    import { useState } from "react";
+    import ReactDOM from "react-dom/client";
+
+    function MyFunction() {
+        const [count, setCount] = useState(0);
+
+        return <h1>You have clicked {count} times.</h1>
+    }
+
+    const root = ReactDOM.createRoot(document.getElementById('root'));
+    root.render(<MyFunction />);
+
+</script>
+
+<button onClick={() => setCount(count + 1)}>
+Click me
+</button>
+</body>
+</html>
